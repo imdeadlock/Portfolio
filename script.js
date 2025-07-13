@@ -111,3 +111,16 @@ document.addEventListener('DOMContentLoaded', function () {
     // Check on scroll
     window.addEventListener('scroll', animateOnScroll);
 });
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        const navbarHeight = 80; // Should match your CSS value
+        
+        window.scrollTo({
+            top: target.offsetTop - navbarHeight,
+            behavior: 'smooth'
+        });
+    });
+});

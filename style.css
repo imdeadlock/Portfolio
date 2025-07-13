@@ -14,6 +14,50 @@
   --transition: all 0.3s ease;
 }
 
+/* Add this at the beginning of your CSS (after :root styles) */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Section adjustments - this is the key fix */
+section {
+  scroll-margin-top: 80px; /* Matches your navbar height */
+  position: relative;
+}
+
+/* Hero section needs special treatment because of its unique styling */
+.hero {
+  padding-top: 120px; /* Already correct - 80px navbar + 40px spacing */
+  min-height: calc(100vh - 80px);
+}
+
+/* Other sections need proper spacing */
+.section {
+  padding: 5rem 5% 6rem; /* Adjusted top padding */
+}
+
+/* Certifications section specific adjustments */
+#certifications {
+  padding-top: 1rem; /* Reduced from 6rem to account for scroll-margin */
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  section {
+    scroll-margin-top: 60px; /* Slightly less for mobile */
+  }
+  
+  .hero {
+    padding-top: 100px;
+  }
+  
+  .section {
+    padding: 4rem 5% 5rem;
+  }
+}
+
+/* Keep all your existing CSS below this point */
+
 [data-theme="dark"] {
   /* Dark Theme */
   --primary-color: #f8f8f8;
@@ -190,7 +234,6 @@ nav {
   margin: 0 auto;
   width: 100%;
   gap: 50px;
-  align-items: center;
   position: relative;
   z-index: 1;
 }
@@ -707,4 +750,157 @@ footer {
 
 .theme-toggle-spin {
   animation: spin 0.5s ease;
+}
+/* Certifications Section */
+.certifications-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.certification-card {
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    transition: var(--transition);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+[data-theme="dark"] .certification-card {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.certification-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.certification-header {
+    background-color: var(--highlight-color);
+    color: white;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.certification-header i {
+    font-size: 1.8rem;
+    color: white;
+}
+
+.certification-header h3 {
+    margin: 0 0 0.3rem 0;
+    font-size: 1.2rem;
+}
+
+.issuer {
+    margin: 0;
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+.certification-body {
+    padding: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.certification-details {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+    color: var(--secondary-color);
+}
+
+.course-content {
+    margin-bottom: 1.5rem;
+}
+
+.course-content h4 {
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+    color: var(--primary-color);
+}
+
+.course-content ul {
+    margin: 0;
+    padding-left: 1.2rem;
+}
+
+.course-content li {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--secondary-color);
+    line-height: 1.5;
+}
+
+.view-cert {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.7rem 1.2rem;
+    background-color: rgba(58, 134, 255, 0.1);
+    color: var(--highlight-color);
+    border-radius: 4px;
+    font-size: 0.9rem;
+    transition: var(--transition);
+    margin-top: auto;
+    width: fit-content;
+}
+
+[data-theme="dark"] .view-cert {
+    background-color: rgba(131, 56, 236, 0.1);
+}
+
+.view-cert:hover {
+    background-color: rgba(58, 134, 255, 0.2);
+    text-decoration: none;
+}
+
+[data-theme="dark"] .view-cert:hover {
+    background-color: rgba(131, 56, 236, 0.2);
+}
+
+.view-cert i {
+    font-size: 0.8rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .certifications-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .certification-card {
+        max-width: 100%;
+    }
+}
+
+/* Updated Certifications Section CSS */
+.certification-logo {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    margin-right: 15px;
+    border-radius: 4px;
+    background-color: white;
+    padding: 5px;
+}
+
+.certification-header {
+    background-color: var(--highlight-color);
+    color: white;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+section {
+    scroll-margin-top: 10px; /* Adjust this value to match your navbar height */
 }
