@@ -184,6 +184,7 @@ nav {
 }
 
 .hero-container {
+  align-items: flex-start;
   display: flex;
   max-width: 1200px;
   margin: 0 auto;
@@ -195,6 +196,7 @@ nav {
 }
 
 .hero-text {
+  margin-top: 20px;
   flex: 1;
   padding-right: 30px;
 }
