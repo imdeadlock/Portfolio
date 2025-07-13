@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahul Arya | Data Science Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">
+        <a href="index.html"><img src="logo.png" alt="Logo" class="logo-img"></a>
+    </div>
+        <div class="nav-links">
+            <a href="#projects">Projects</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+            <button id="theme-toggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+        <button class="hamburger" aria-label="Menu">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <button id="mobile-theme-toggle">
+            <i class="fas fa-moon"></i> Toggle Theme
+        </button>
+    </div>
+   <!-- Hero Section -->
+<section class="hero">
+    <div class="hero-container">
+        <div class="hero-text">
+            <h1>Hi, I'm <span class="highlight">Rahul Arya</span></h1>
+            <p class="hero-description">I'm a Data Science enthusiast skilled in Python and analytics, passionate about uncovering insights hidden within complex data. I leverage machine learning and statistical techniques to turn raw information into meaningful, actionable solutions that drive smarter decisions.</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="cta-button">View My Projects</a>
+                <a href="Rahul_Arya_Resume.pdf" class="cta-button secondary" download>Download Resume</a>
+            </div>
+        </div>
+        
+        <div class="resume-card">
+            <div class="resume-header">
+                <h2>Rahul Arya</h2>
+            </div>
+            
+            <div class="resume-details">
+                <div class="detail-item">
+                    <i class="fas fa-graduation-cap"></i>
+                    <div>
+                        <h3>M.Sc Operational Research</h3>
+                        <p>Hindu College, University of Delhi</p>
+                    </div>
+                </div>
+                
+                <div class="detail-item">
+                    <i class="fas fa-briefcase"></i>
+                    <div>
+                        <h3>Research Team Leader</h3>
+                        <p>Max Healthcare (3 years experience)</p>
+                    </div>
+                </div>
+                
+                <div class="detail-item">
+                    <i class="fas fa-star"></i>
+                    <div>
+                        <h3>Top Skills</h3>
+                        <p>Python • Machine Learning • SQL • Excel • Power BI</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="resume-metrics">
+                <div class="metric">
+                    <h4>80%</h4>
+                    <p>REGRESSION PREDICTION ACCURACY</p>
+                </div>
+                <div class="metric">
+                    <h4>$20M+</h4>
+                    <p>PIZZA SALES ANALYZED</p>
+                </div>
+                <div class="metric">
+                    <h4>83%</h4>
+                    <p>CUSTOMER CHURN PREDICTION</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <h2 class="section-title">Data Science Projects</h2>
+        <div class="projects-grid">
+            <!-- Medical Insurance Project -->
+            <div class="project-card">
+                <div class="project-image" style="background-image: url('price.png')"></div>
+                <div class="project-info">
+                    <h3>Medical Insurance Price Prediction</h3>
+                    <p>Predicted medical insurance costs using machine learning with 80% accuracy.</p>
+                    <ul class="project-details">
+                        <li><strong>Technologies:</strong> Python, Scikit-learn, Pandas, Seaborn</li>
+                        <li><strong>Methods:</strong> Linear Regression, EDA, Feature Engineering</li>
+                        <li><strong>Key Achievement:</strong> Identified 79% correlation between smoker status and charges</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="https://github.com/imdeadlock/Medical-Insurance-Price" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        <a href="" target="_blank"><i class="fas fa-chart-line"></i> Analysis</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Customer Churn Project -->
+            <div class="project-card">
+                <div class="project-image" style="background-image: url('churn.png')"></div>
+                <div class="project-info">
+                    <h3>Customer Churn Prediction</h3>
+                    <p>Developed classification models to predict telecom customer attrition.</p>
+                    <ul class="project-details">
+                        <li><strong>Technologies:</strong> Python, Random Forest, Logistic Regression</li>
+                        <li><strong>Methods:</strong> Class balancing, Feature Correlation Analysis</li>
+                        <li><strong>Key Achievement:</strong> Improved accuracy from 77% to 83% with Random Forest</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="https://github.com/imdeadlock/Telecom-Customer-Churn" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        <a href="https://www.linkedin.com/posts/rahularya271_datascience-machinelearning-customerchurn-activity-7346561761891819520-1TPb?utm_source=share&utm_medium=member_desktop&rcm=ACoAADiN3GsBtqDH9O7-T2Tb5yfaTQ6QAvLBW30" target="_blank"><i class="fas fa-external-link-alt"></i> Demo</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pizza Sales Project -->
+            <div class="project-card">
+                <div class="project-image" style="background-image: url('pizza_report.png')"></div>
+                <div class="project-info">
+                    <h3>Pizza Sales Analytics</h3>
+                    <p>Interactive Power BI dashboard for pizza sales performance analysis.</p>
+                    <ul class="project-details">
+                        <li><strong>Technologies:</strong> Power BI, SQL, DAX</li>
+                        <li><strong>Methods:</strong> ETL, KPI Development, Trend Analysis</li>
+                        <li><strong>Key Achievement:</strong> Identified top 5 pizzas generating $20M in sales</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="https://github.com/imdeadlock/Pizza-Sales-Report/blob/main/dashb.pbix" target="_blank"><i class="fas fa-chart-bar"></i> Dashboard</a>
+                        <a href="https://github.com/imdeadlock/Pizza-Sales-Report/blob/main/QUERY.sql" target="_blank"><i class="fas fa-database"></i> SQL Queries</a>
+                    </div>
+                </div>
+            </div>
+<!-- Zomato EDA Project -->
+            <div class="project-card">
+                <div class="project-image" style="background-image: url('zomato_eda.png')"></div>
+                <div class="project-info">
+                    <h3>Zomato Exploratory Data Analysis (EDA)</h3>
+                    <p>Performed Exploratory Data Analysis (EDA) and found actionable insights.</p>
+                    <ul class="project-details">
+                        <li><strong>Technologies:</strong> Python, Jupyter Notebook</li>
+                        <li><strong>Methods:</strong> EDA, Data Visualization </li>
+                        <li><strong>Key Achievement:</strong> Found actionable insights from the dataset</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="https://github.com/imdeadlock/ZomatoEDA/" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        <a href="https://github.com/imdeadlock/ZomatoEDA/blob/main/README.md" target="_blank"><i class="fas fa-file"></i> Description</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-image" style="background-image: url('about.jpg')"></div>
+            <div class="about-text">
+                <p>Hello! I am a Postgraduate student in <b>Operational Research</b> from <b>Hindu College, University of Delhi</b>, with a <b>Bachelor's degree in Computer Applications (BCA)</b>. My academic journey has equipped me with a strong foundation in computer science, programming, mathematical modelling, and data analytics.</p>
+                <p>Born and raised in <b>Delhi, India</b>, I completed my schooling with a focus on <b>Physics, Chemistry, Mathematics, and Economics</b>, which sparked my interest in both analytical thinking and technology. My graduation in BCA nurtured my passion for programming, and my post-graduation in Operational Research has expanded my skills in optimization, statistical modelling, and data-driven decision-making.</p>
+                <p>I am particularly interested in the fields of <b>Machine Learning and Data Science</b>, and I am actively working on strengthening my expertise in these areas through projects and continuous learning.</p>
+                <p>Beyond academics, I enjoy playing video games like <b>FIFA, Mortal Kombat, and Assassin’s Creed</b>. I'm also an avid follower of educational YouTube channels such as <b>3Blue1Brown</b> and <b>Veritasium</b>, love to travel and i plan to <b>visit all around the world</b>visit all around the world, finally i love to watch <b>Sci-Fi</b> movies and i'm a big fan of <b>Marvel</b> Movies.</p>
+                <p>I firmly believe that passion and dedication are the keys to success, and I strive to apply this philosophy in everything I do.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3>Programming & Tools</h3>
+                <ul>
+                    <li>Python (Pandas, NumPy, Scikit-learn)</li>
+                    <li>SQL (MySQL, PostgreSQL)</li>
+                    <li>Excel (Visualization, Advanced Formulas)</li>
+                    <li>Power BI</li>
+                    <li>Tableau</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Data Science</h3>
+                <ul>
+                    <li>Machine Learning</li>
+                    <li>Statistical Modeling</li>
+                    <li>Data Visualization</li>
+                    <li>Predictive Analytics</li>
+                    <li>Data Wrangling</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Analytical Methods</h3>
+                <ul>
+                    <li>Operational Research</li>
+                    <li>Optimization Techniques</li>
+                    <li>Time Series Analysis</li>
+                    <li>A/B Testing</li>
+                    <li>Decision Analysis</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2 class="section-title">Get In Touch</h2>
+        <p>Interested in discussing data science opportunities or collaborations? I'd love to hear from you!</p>
+        <div class="contact-links">
+            <a href="mailto:rahularya271@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a>
+            <a href="https://github.com/imdeadlock" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/rahularya271" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="Rahul_Arya_Resume.pdf" target="_blank" title="Resume"><i class="fas fa-file-pdf"></i></a>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <p>&copy; <span id="year"></span> Rahul Arya. All rights reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
